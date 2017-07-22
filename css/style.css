@@ -15,9 +15,16 @@ footer p {
 	color: #aaa;
 }
 
+.featured1{
+	padding: 40px 0 !important;
+}
+.quote {
+	padding-bottom: 40px;
+}
 p{
 	font-family: 'Open Sans', sans-serif;
 }
-h1{
+
+h1 {
 	font-family: 'Oswald', sans-serif;
 }

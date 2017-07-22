@@ -5,8 +5,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Bootstrap sample tutorial</title>
-	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
+	<!-- Customize CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Google web fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald:700" rel="stylesheet">
 </head>
 <body>
 
@@ -43,27 +49,186 @@
 <!-- END NAVIGATION MENU -->
 
 <!--JUMBOTRON-->
-<div class="container">
+<div class="container quote">
 	<div class="jumbotron">
 		<h1>Hello World</h1>
 		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-user" style="font-size: 30px; color:red"></span></button>
+		<button type="button" class="btn btn-success"><span class="glyphicon glyphicon-ok" style="font-size: 30px"></span>
+		</button>
 	</div>
+	<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+	<!--Modal-->
+	<div id="myModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="moda-title">Modal Header</h4>
+				</div>
+				<div class="modal-body">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				</div>
+				<div class="modal-footer">
+					Modal Footer
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="panel panel-default">
+			    <div class="panel-heading">
+			    	<h3 class="panel-title">Title</h3>
+			    </div>
+				<div class="panel-body">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				</div>
+				<div class="panel-footer">
+					footer
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="panel panel-primary">
+			    <div class="panel-heading">
+			    	<h3 class="panel-title">Title</h3>
+			    </div>
+				<div class="panel-body">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				</div>
+				<div class="panel-footer">
+					footer
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="panel panel-success">
+			    <div class="panel-heading">
+			    	<h3 class="panel-title">Title</h3>
+			    </div>
+				<div class="panel-body">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				</div>
+				<div class="panel-footer">
+					footer
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Well -->
+	<div class="well">
+		<h1>This is a well</h1>
+	</div>
+	<!-- Alerts-->
+	<div class="alert alert-danger">
+	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		This is danger alert
+	</div>
+	<div class="alert alert-success">This is success alert</div>
+	<div class="alert alert-warning">This is warning alert</div>
+	<div class="alert alert-info">This is info alert</div>
+
+	<!--Badges and Labels-->
+	<a href="#">Likes<span class="badge">10</span></a>
+	<a href="#">Comments<span class="badge">20</span></a>
+	<button type="button" class="btn btn-success">Likes<span class="badge">100</span></button>
+
+	<h1>Label<span class="label label-default">Label</span></h1>
+	<span class="label label-default">Label</span>
+
+	<!--Carousel-->
+	<div class="carousel slide" id="myCarousel" data-ride="carousel">
+		<div class="carousel-inner">
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+			<div class="item active">
+				<img src="image/onepiece1.jpg">
+				<div class="carousel-caption">
+					<h2>Yo ninjas adfasdfasdfasdf</h2>
+				</div>
+			</div>
+			<div class="item">
+				<img src="image/onepiece2.jpg">
+				<div class="carousel-caption">
+					<h2>Yo ninjas adfasdfasdfasdf</h2>
+				</div>
+			</div>
+			<div class="item">
+				<img src="image/onepiece3.jpg">
+				<div class="carousel-caption">
+					<h2>Yo ninjas adfasdfasdfasdf</h2>
+				</div>
+			</div>	
+		</div>	
+		<a href="#myCarousel" class="right carousel-control" data-slide="next">
+			<span class="glyphicon glyphicon- -right"></span>
+		</a>
+		<a href="#myCarousel" class="left carousel-control" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+	</div>
+	<div class="rows featured1">
+		<div class="col-sm-4 head">
+		<a href="#" class="thumbnail"><img src="image/c++.png"></a>
+		<h1>Head 1</h1>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		<button type="button" class="btn btn-danger">thank you</button>
+		</div>
+
+		<div class="col-sm-4 head">
+		<a href="#" class="thumbnail"><img src="image/java.png"></a>
+		<h1>Head 1</h1>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		<button type="button" class="btn btn-danger">thank you</button>
+		</div>
+
+		<div class="col-sm-4 head">
+		<a href="#" class="thumbnail"><img src="image/python.png"></a>
+		<h1>Head 1</h1>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		<button type="button" class="btn btn-danger">thank you</button>
+		</div>
+	</div>
+
 </div>
 
 
 <!-- FOOTER -->
-<div class="navbar navbar-inverse">
+<footer>
 	<div class="container">
-	<div class="navbar-text pull-left">
-	<p>copyright Sample Bootstrap 2017 </p>
-	</div>
+		<div class="navbar-text pull-left">
+			<p>copyright Sample Bootstrap 2017 </p>
+		</div>
+		<div class="navbar-text pull-right">
+			<a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+			<a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+			<a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+		</div>
 		
 	</div>
-</div>
+</footer>
 <!-- END FOOTER -->
 
 <!-- jQuery necessary for bootstrap javascript -->
-<script type="text/javascript" src="jquery-2.2.3.min.js"></script>
-<script type="text/javascript" src="bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript">
+		$(function(){
+			$('.carousel').carousel({
+				interval: 2500,
+				// pause: false,
+				//wrap: false, //di na babalik sa unang slide
+				keyboard:true
+			})
+		})
+</script>
 </body>
 </html>
+
