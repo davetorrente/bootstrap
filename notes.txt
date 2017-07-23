@@ -1,0 +1,18 @@
+img-responsive 
+img-rounded
+img-thumbnail	
+center-block
+
+ul class="list-unstyled"
+
+hidden-xs / hidden-md
+
+visible-xs / visible-md-block //dun lang siya visible
+
+ul class="nav nav-tabs"
+ul class="nav nav-pills nav-justified"
+
+$(".nav li").on("click", function(){
+	$(".nav li").removeClass("active');
+	$(this).addClass("active");
+});
